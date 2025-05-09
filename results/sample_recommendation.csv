@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Load sorted similarities data
+df = pd.read_csv('../data/sorted_similarities.csv')
+
+# Get top-N recommendations (e.g., top 10)
+top_n = 10
+top_recommendations = df.head(top_n)
+
+# Display top recommendations
+print(top_recommendations[['news_id', 'similarity']])
+
+# Save the recommendations to a CSV file
+top_recommendations.to_csv('../results/sample_recommendations.csv', index=False)

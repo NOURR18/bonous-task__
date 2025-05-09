@@ -1,0 +1,8 @@
+#libraries that must be installed before running the codes
+pandas
+numpy
+scikit-learn
+nltk
+spacy
+matplotlib
+seaborn
